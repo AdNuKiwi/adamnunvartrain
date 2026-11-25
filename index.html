@@ -67,6 +67,7 @@ section{padding:2.5rem 0;border-top:1px solid var(--line)}
 .job{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:1rem 1.1rem;margin-bottom:.9rem}
 .job .date{margin:.15rem 0 .5rem}
 .job ul{font-size:.98rem}
+.shot{margin:0 0 1.25rem}.shot img{width:100%;height:auto;border-radius:10px;display:block}
 .coach{list-style:none;padding:0;counter-reset:c}
 .coach li{counter-increment:c;position:relative;padding-left:2.6rem;margin:0 0 1rem}
 .coach li::before{content:counter(c);position:absolute;left:0;top:.05rem;width:1.8rem;height:1.8rem;border-radius:50%;background:var(--ink);color:#fff;font-weight:600;display:grid;place-items:center;font-size:.9rem}
@@ -127,8 +128,7 @@ footer.site{padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.9rem;border-to
 <section id="about">
   <div class="wrap">
     <h2>About</h2>
-    <p>I'm a fourth-year kinesiology student at the University of Guelph-Humber and a canfitpro Personal Training Specialist. I train one-on-one clients and lead bootcamp, Hyrox and functional classes at Humber Athletics. I've also coached at 9Round Fitness, assisted with exercise rehab at a physiotherapy clinic, and run functional fitness classes for adults 60+.</p>
-    <p>I've been lifting for over 8 years, and I use what I learn in anatomy, physiology and biomechanics on the floor every day: correcting form, fixing imbalances and helping clients build muscle, get stronger and move better, whatever their goal. I speak English and Czech.</p>
+    <p>I'm a fourth-year kinesiology student at the University of Guelph-Humber and a canfitpro-certified personal trainer. I coach one-on-one clients and group classes, from first-time gym-goers to adults over 60, and I put what I learn in anatomy, biomechanics and exercise physiology straight to work on the floor. I speak English and Czech.</p>
   </div>
 </section>
 
@@ -152,53 +152,14 @@ footer.site{padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.9rem;border-to
 
 <section id="experience">
   <div class="wrap">
-    <h2>Experience</h2>
-    <article class="job">
-      <h3>Personal Trainer &amp; Front Desk, Humber Athletics</h3>
-      <span class="date">Etobicoke, ON · Sep 2024 to present</span>
-      <ul>
-        <li>96 one-on-one sessions with 16 clients; 96% attendance.</li>
-        <li>Run consultations, write individual programs and track every client's progress in session logs.</li>
-        <li>Lead bootcamp, Hyrox and functional training classes; handle memberships and waivers at the front desk.</li>
-      </ul>
-    </article>
-    <article class="job">
-      <h3>Founder &amp; Coach, Mount Wellness</h3>
-      <span class="date">Mount Albert, ON · May 2026 to present</span>
-      <ul>
-        <li>Small-group functional fitness for adults 60+ at the Mount Albert Legion; 22 people registered in six months.</li>
-        <li>Built the Monday class to 7–8 regulars; I plan every class and adjust exercises for each participant.</li>
-      </ul>
-    </article>
-    <article class="job">
-      <h3>Rehabilitation Practitioner Assistant (placement), The Spot Physiotherapy Rehab &amp; Performance</h3>
-      <span class="date">Markham, ON · Jan to Mar 2026</span>
-      <ul>
-        <li>Taught and progressed exercise programs for musculoskeletal injuries under clinician supervision.</li>
-        <li>Patients ranged from high-school athletes to retirees.</li>
-      </ul>
-    </article>
-    <article class="job">
-      <h3>Trainer, 9Round Fitness</h3>
-      <span class="date">Newmarket, ON · Aug 2021 to Nov 2022</span>
-      <ul>
-        <li>Demonstrated exercises and coached form in circuit-based kickboxing workouts.</li>
-      </ul>
-    </article>
-    <article class="job">
-      <h3>Volunteer, Speed Training Lab + High Performance Centre</h3>
-      <span class="date">Vaughan, ON · Feb to Mar 2024</span>
-      <ul>
-        <li>Assisted coaches with group speed-training sessions.</li>
-      </ul>
-    </article>
-    <article class="job">
-      <h3>My own training</h3>
-      <ul>
-        <li>Lifting for 8+ years; competing in powerlifting for 2</li>
-        <li>2026 WRPF-CAN Tested National Champion, 90 kg (Junior and Open) · 600 kg raw total · Humber powerlifting team</li>
-      </ul>
-    </article>
+    <h2>Where I've coached</h2>
+    <ul class="creds">
+      <li><h3>Humber Athletics</h3><span class="date">Personal Trainer · 2024 to present</span></li>
+      <li><h3>Mount Wellness</h3><span class="date">Founder &amp; Coach, small-group fitness for adults 60+ · 2026 to present</span></li>
+      <li><h3>The Spot Physiotherapy Rehab &amp; Performance</h3><span class="date">Rehabilitation Assistant (placement) · 2026</span></li>
+      <li><h3>9Round Fitness</h3><span class="date">Trainer · 2021 to 2022</span></li>
+    </ul>
+    <p><a href="/Adam-Nunvar-Resume.pdf" download>Full details in my resume (PDF)</a></p>
   </div>
 </section>
 
@@ -211,6 +172,20 @@ footer.site{padding:1.5rem 0 2.5rem;color:var(--muted);font-size:.9rem;border-to
       <li><strong>Progress you can see.</strong> I log every session, so we both know exactly what's improving.</li>
       <li><strong>Meet people where they are.</strong> First-timer or 60+, same principles, scaled to the person.</li>
     </ol>
+  </div>
+</section>
+
+<section id="training">
+  <div class="wrap">
+    <h2>My own training</h2>
+    <figure class="shot">
+      <picture>
+        <source media="(min-width:760px)" srcset="/meet-1400.jpg">
+        <img src="/meet-800.jpg" width="800" height="533" loading="lazy" alt="Adam Nunvar setting up for a deadlift at a powerlifting meet">
+      </picture>
+    </figure>
+    <p>I don't coach from a textbook alone. I've been lifting for over 8 years and compete in powerlifting, winning the 2026 WRPF-CAN Tested national title at 90 kg (Junior and Open).</p>
+    <p>Almost everything I put in a client's program, I've done myself, so I know how it feels, what it takes to recover from, and how to fit it around work and school.</p>
   </div>
 </section>
 
